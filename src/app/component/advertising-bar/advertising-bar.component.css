@@ -1,0 +1,49 @@
+.advertising-bar {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Empurra o texto para um lado e o botão para o outro */
+    background-color: black ; /* Cor de fundo escura (apenas para contraste, pode ajustar) */
+    padding: 10px 20px; /* Espaçamento interno */
+    color: white; /* Cor do texto padrão dentro da barra (Requisito 1) */
+    font-family: sans-serif; /* Fonte simples (opcional, ajuste se precisar) */
+    font-size: 12px; /* Tamanho da fonte (opcional) */
+}
+
+.texto-promocional {
+    background-color: transparent; /* Fundo transparente */
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    flex-grow: 1; /* Permite que o parágrafo use o espaço disponível */
+}
+
+.texto-laranja {
+    background-color: transparent; /* Fundo transparente */
+    color: orange; /* Define a cor laranja */
+    font-weight: bold; /* Opcional: para dar mais destaque */
+}
+
+.link-ver-agora {
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Cor do texto do link branco (Requisito 1) */
+    margin-left: 10px; /* Adiciona um pequeno espaço à esquerda do link */
+    white-space: nowrap; /* Evita que o link quebre linha se o texto for muito longo */
+}
+
+.link-ver-agora:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    opacity: 0.9; /* Deixa um pouco transparente */
+}
+
+.botao-fechar {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto do botão branco (Requisito 1) */
+    font-size: 1.2rem; /* Tamanho da fonte um pouco maior para o 'x' */
+    cursor: pointer; /* Mostra um cursor de mão para indicar que é clicável */
+    padding: 0 5px; /* Espaçamento interno horizontal */
+    margin-left: 10px; /* Espaço à esquerda do botão */
+    line-height: 1; /* Ajusta a altura da linha para centralizar o 'x' */
+}
+
+.botao-fechar:hover {
+    opacity: 0.7; /* Deixa mais transparente ao passar o mouse */
+}

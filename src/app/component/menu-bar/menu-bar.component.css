@@ -1,0 +1,82 @@
+.menu-bar {
+    display: flex; /* Habilita o Flexbox. Os filhos (component-left, component-center, component-right) se tornam itens flex. */
+    align-items: center; /* Alinha os itens flex verticalmente ao centro (na linha transversal) */
+    justify-content: space-between; /* Distribui o espaço horizontalmente: empurra o primeiro item para o início, o último para o final e distribui o espaço restante entre eles. */
+
+    background-color: white; /* Exemplo: fundo branco */
+    color: black; /* Exemplo: cor do texto padrão */
+    padding: 10px 20px; /* Exemplo: espaçamento interno */
+    width: 100%; /* Exemplo: ocupa a largura total */
+    box-sizing: border-box; /* Garante que padding/border não aumentem a largura total */
+    flex-wrap: nowrap; /* Permite que os itens quebrem linha em telas menores */
+}
+
+.menu-left {
+    background-color: white;
+    display: flex; /* Se o conteúdo interno precisar de alinhamento (ex: imagem e título lado a lado) */
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu-center {
+    background-color: white;
+    flex-grow: 1; /* Permite que a parte central cresça e ocupe o espaço restante. */
+    display: flex; /* Se o conteúdo interno precisar de alinhamento (ex: links lado a lado) */
+    justify-content: center; /* Centraliza o conteúdo interno horizontalmente */
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu-right {
+     background-color: white;
+     display: flex; /* Se o conteúdo interno precisar de alinhamento (ex: botões lado a lado) */
+     align-items: center;
+     gap: 10px; /* Espaço entre os botões (abordagem moderna) */
+     flex-wrap: nowrap; /* Permite que os botões quebrem linha */
+     justify-content: flex-end; /* Alinha botões à direita se quebrarem */
+}
+
+.menu-center a {
+    margin: 0 10px; /* Espaço entre os links */
+    color: inherit; /* Usa a cor do texto do container pai */
+    text-decoration: none;
+}
+
+.menu-right button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button-1 {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.button-2 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+@media (max-width: 768px) { /* Ajuste o breakpoint conforme necessário */
+    .menu-bar {
+        flex-direction: column; /* Empilha as partes verticalmente em telas menores */
+        align-items: stretch; /* Faz as partes ocuparem a largura total */
+    }
+
+    .menu-left,
+    .menu-center,
+    .menu-right {
+        margin: 10px 0; /* Adiciona espaço vertical entre as partes empilhadas */
+        /* Remova ou ajuste os justify-content/align-items internos se a centralização mudar */
+        justify-content: center; /* Centraliza conteúdo dentro das partes quando empilhadas */
+        padding: 0 10px; /* Adiciona um pouco de padding horizontal */
+    }
+
+    .menu-right {
+        justify-content: center; /* Centraliza botões quando empilhados */
+    }
+}
