@@ -19,12 +19,14 @@
 }
 
 .menu-center {
-    background-color: white;
+    background-color:transparent;
     flex-grow: 1; /* Permite que a parte central cresça e ocupe o espaço restante. */
     display: flex; /* Se o conteúdo interno precisar de alinhamento (ex: links lado a lado) */
     justify-content: center; /* Centraliza o conteúdo interno horizontalmente */
     align-items: center;
     flex-wrap: nowrap;
+    font-weight: bold;
+    z-index: 100;
 }
 
 .menu-right {
@@ -79,4 +81,31 @@
     .menu-right {
         justify-content: center; /* Centraliza botões quando empilhados */
     }
+}
+
+.menu ul li{
+    background-color:white;
+    color:black;
+    float: left;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.menu ul li:hover{
+    background-color: #f0f0f0;
+    color: #000;
+}
+.menu ul {
+    padding: 0;
+}
+
+.menu ul ul {
+    display: none;;
+}
+
+.menu ul li:hover > ul {
+    display: block;
 }

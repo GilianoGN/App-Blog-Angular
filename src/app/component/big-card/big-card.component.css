@@ -1,0 +1,63 @@
+.big-card {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    margin: 30px;
+}
+
+img {
+    float: left; /* Coloca a imagem à esquerda */
+    border: 1px solid #ccc; /* Adiciona uma pequena borda cinza */
+    margin-right: 15px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+.bigcard_artigos {
+    display: flex;
+    flex-direction: column; /* Organiza os textos em coluna */
+    justify-content: center; /* Centraliza verticalmente o conteúdo de texto dentro do container */
+    padding-left: 50px;
+}
+
+h2, h1, p {
+    margin: 5px 0; /* Adiciona um pequeno espaço vertical entre os elementos de texto */
+}
+
+.read-more {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #007BFF; /* Cor azul padrão do Bootstrap */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.novo-read {
+    background-color:rgb(224, 224, 224); /* Fundo transparente */
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    line-height: normal;
+}
+.read-read {
+    padding-left: 10px;
+}
+
+h2.sem-fundo {
+    margin: 0;
+    font-size: 35;
+    display: inline-block;
+}
+
+.texto-azul {
+    background-color:blue; /* Fundo transparente */
+    color:white; /* Define a cor laranja */
+    font-weight: bold; /* Opcional: para dar mais destaque */
+    border-radius: 15px;
+    font-size: 25px;
+    padding: 5px 20px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 80px; /* Tamanho da fonte do subtítulo */
+}
+
+.artigo {
+    color:darkslategrey
+}
