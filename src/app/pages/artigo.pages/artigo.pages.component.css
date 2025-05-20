@@ -1,0 +1,57 @@
+.app-menu-bar {
+    z-index: 10;
+    position:absolute;
+}
+
+.app-big-card {
+    z-index: 1;
+}
+
+.card {
+    width: 900px; /* Ajuste a largura conforme necessário */
+    border: 1px solid #ddd; /* Adiciona uma borda sutil */
+    border-radius: 8px; /* Arredonda as bordas */
+    margin: 20px; /* Adiciona um pouco de margem ao redor do card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    overflow: hidden; /* Garante que a imagem com borda arredondada não vaze */
+    justify-self: center; /* Centraliza o card na grade */
+}
+
+.card-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove qualquer espaço extra abaixo da imagem */
+    border-radius: 8px 8px 0 0; /* Arredonda apenas as bordas superiores da imagem */
+}
+
+.card-info {
+    padding: 15px; /* Adiciona um espaçamento interno ao conteúdo de texto */
+}
+
+.author-date {
+    display: flex;
+    justify-content: space-between; /* Coloca o autor à esquerda e a data à direita */
+    margin-bottom: 15px; /* Espaço abaixo das informações de autor e data */
+    margin-top: 15px;
+    font-size: 20px; /* Reduz o tamanho da fonte */
+    color: #777; /* Cor do texto cinza */
+}
+
+.author, .date {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Herda a cor do pai */
+}
+
+.title {
+    font-size: 2.0em; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: #333; /* Cor do título */
+    font-weight: bold; /* Deixa o título em negrito */
+}
+
+.summary {
+    font-size: 1.2em; /* Tamanho do texto do resumo */
+    line-height: 1.4; /* Espaçamento entre linhas para melhor leitura */
+    color: #555; /* Cor do texto do resumo */
+    margin-bottom: 15px; /* Espaço abaixo do resumo */
+}

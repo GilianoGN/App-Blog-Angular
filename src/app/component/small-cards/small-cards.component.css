@@ -1,0 +1,18 @@
+.unicard-container {
+  display: flex; /* Ativa o Flexbox para o container */
+  flex-direction: row; /* Organiza os itens em linha (lado a lado) */
+  /* justify-content: space-around; Espaçamento igual entre os unicards */
+  /* justify-content: space-between; Espaçamento máximo entre os unicards, bordas fixas */
+  /* justify-content: flex-start; Alinha os unicards à esquerda */
+  /* justify-content: center; Centraliza os unicards */
+}
+
+app-unicard {
+  /* Você pode adicionar margens ou outros estilos para espaçamento entre os unicards */
+  margin-right: 10px; /* Adiciona uma margem à direita de cada unicard */
+}
+
+/* Para remover a margem do último unicard, se necessário */
+.unicard-container app-unicard:last-child {
+  margin-right: 0;
+}

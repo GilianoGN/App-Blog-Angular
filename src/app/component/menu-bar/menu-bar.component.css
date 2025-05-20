@@ -16,6 +16,15 @@
     display: flex; /* Se o conteúdo interno precisar de alinhamento (ex: imagem e título lado a lado) */
     align-items: center;
     flex-wrap: nowrap;
+    height: 40px;
+    width: 200px;
+    overflow: hidden; /* Evita que o conteúdo interno transborde */
+}
+
+.menu-left img {
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 1px; /* Espaço entre a imagem e o texto */
 }
 
 .menu-center {
@@ -108,4 +117,8 @@
 
 .menu ul li:hover > ul {
     display: block;
+}
+
+.clHome, .clApres, .Art1, .Art2, .Art3, .Art4, .Art5 {
+    cursor: pointer;
 }

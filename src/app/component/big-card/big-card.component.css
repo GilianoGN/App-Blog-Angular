@@ -25,6 +25,7 @@ h2, h1, p {
     text-decoration: none; /* Remove o sublinhado do link */
     color: #007BFF; /* Cor azul padrão do Bootstrap */
     font-weight: bold; /* Deixa o texto em negrito */
+    cursor: pointer;
 }
 
 .novo-read {

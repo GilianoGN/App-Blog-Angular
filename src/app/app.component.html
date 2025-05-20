@@ -1,6 +1,4 @@
-<p>INICIANDO PROJETO BLOG ANGULAR</p>
-<app-advertising-bar></app-advertising-bar>
-<app-menu-bar></app-menu-bar>
-<app-big-card></app-big-card>
-<app-small-cards></app-small-cards>
+<app-apresent *ngIf="ActiveApresent"></app-apresent>
+<app-home *ngIf="ActiveHome"></app-home>
+<app-artigo *ngIf="ActiveArtigo"></app-artigo>
 <router-outlet />

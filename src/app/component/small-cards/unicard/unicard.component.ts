@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { AppComponent } from '../../app.component';
+import { AppComponent } from '../../../app.component';
 
 @Component({
-  selector: 'app-big-card',
+  selector: 'app-unicard',
   imports: [],
-  templateUrl: './big-card.component.html',
-  styleUrl: './big-card.component.css'
+  templateUrl: './unicard.component.html',
+  styleUrl: './unicard.component.css'
 })
-export class BigCardComponent {
+export class UnicardComponent {
 
   constructor(private appComponent: AppComponent) {
     this.appComponent.ActiveHome;
