@@ -8,6 +8,4 @@ import { MenuBarComponent } from '../../component/menu-bar/menu-bar.component';
   templateUrl: './apresent.pages.component.html',
   styleUrl: './apresent.pages.component.css'
 })
-export class ApresentPagesComponent {
-
-}
+export class ApresentPagesComponent {}

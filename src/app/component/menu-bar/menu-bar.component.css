@@ -82,7 +82,6 @@
     .menu-center,
     .menu-right {
         margin: 10px 0; /* Adiciona espaço vertical entre as partes empilhadas */
-        /* Remova ou ajuste os justify-content/align-items internos se a centralização mudar */
         justify-content: center; /* Centraliza conteúdo dentro das partes quando empilhadas */
         padding: 0 10px; /* Adiciona um pouco de padding horizontal */
     }

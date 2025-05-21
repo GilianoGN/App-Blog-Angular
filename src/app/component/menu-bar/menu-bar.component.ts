@@ -7,6 +7,7 @@ import { AppComponent } from '../../app.component';
   templateUrl: './menu-bar.component.html',
   styleUrl: './menu-bar.component.css'
 })
+
 export class MenuBarComponent {
 
   constructor(private appComponent: AppComponent) {

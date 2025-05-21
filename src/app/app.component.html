@@ -1,4 +1,4 @@
 <app-apresent *ngIf="ActiveApresent"></app-apresent>
 <app-home *ngIf="ActiveHome"></app-home>
-<app-artigo *ngIf="ActiveArtigo"></app-artigo>
+<app-artigo [id]="Active" *ngIf="ActiveArtigo"></app-artigo>
 <router-outlet />

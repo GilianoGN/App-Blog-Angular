@@ -1,17 +1,12 @@
 <div class="card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" alt="Card Image" class="card-image">
+    <img src={{photo}} alt="Card Image" class="card-image">
     <div class="card-info">
         <div class="author-date">
-            <a class="author">by Giliano G N</a>
-            <a class="date">19 Mai 2025</a>
+            <a class="author">by {{author}}</a>
+            <a class="date">{{date}}</a>
         </div>
-        <h1 class="title">
-            Beyond Transactions: Unlocking the Full Potential of Your POS System
-        </h1>
-        <p class="summary">
-            In the realm of modern business operations, a Point of Sale (POS) system serves
-            as more than just a t...
-        </p>
-        <p class="read-more" (click)="Ativacao(2,1)">Read More →</p>
+        <h1 class="title">{{title}}</h1>
+        <p class="summary">{{resume}}</p>
+        <p class="read-more" (click)="Ativacao(2)">Read More →</p>
     </div>
 </div>

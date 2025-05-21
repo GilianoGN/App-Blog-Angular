@@ -1,13 +1,11 @@
 .advertising-bar {
     display: flex;
     align-items: center; /* Alinha verticalmente ao centro */
-/*    justify-content: center; /* Empurra o texto para um lado e o botão para o outro */
     background-color: black ; /* Cor de fundo escura (apenas para contraste, pode ajustar) */
     padding: 10px 20px; /* Espaçamento interno */
     color: white; /* Cor do texto padrão dentro da barra (Requisito 1) */
     font-family: sans-serif; /* Fonte simples (opcional, ajuste se precisar) */
     font-size: 12px; /* Tamanho da fonte (opcional) */
-/*    text-align: center; /* Centraliza o texto */
 }
 
 .texto-promocional {
@@ -42,7 +40,6 @@
     font-size: 1.2rem; /* Tamanho da fonte um pouco maior para o 'x' */
     cursor: pointer; /* Mostra um cursor de mão para indicar que é clicável */
     padding: 0 5px; /* Espaçamento interno horizontal */
-/*    margin-left: 20px; /* Espaço à esquerda do botão */
     line-height: 1; /* Ajusta a altura da linha para centralizar o 'x' */
 }
 

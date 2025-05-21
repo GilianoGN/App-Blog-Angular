@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './advertising-bar.component.html',
   styleUrl: './advertising-bar.component.css'
 })
-export class AdvertisingBarComponent {
-
-}
+export class AdvertisingBarComponent {}

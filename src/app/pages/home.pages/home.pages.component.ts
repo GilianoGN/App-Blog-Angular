@@ -10,6 +10,4 @@ import { SmallCardsComponent } from '../../component/small-cards/small-cards.com
   templateUrl: './home.pages.component.html',
   styleUrl: './home.pages.component.css'
 })
-export class HomePagesComponent {
-
-}
+export class HomePagesComponent {}
