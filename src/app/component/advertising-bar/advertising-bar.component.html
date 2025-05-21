@@ -1,8 +1,8 @@
-<div class="advertising-bar">
+<div class="advertising-bar" *ngIf="showBar">
     <hr>
     <p class="texto-promocional">
         See another pricing and advantege at <span class="texto-laranja">GGN Special</span> 2024.
         <a href="#" class="link-ver-agora">See now -></a> </p>
-    <button class="botao-fechar">x</button>
+    <button class="botao-fechar" (click)="closeBar()">x</button>
     <hr>
 </div>

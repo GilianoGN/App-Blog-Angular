@@ -101,7 +101,13 @@
     text-align: center;
     line-height: 40px;
     border-radius: 20px;
+    position: relative; /* Para o submenu */
 }
+
+.clHome, .clApres, .Art1, .Art2, .Art3, .Art4, .Art5, .clArtigo, .clSolutions, .clLearn {
+    cursor: pointer;
+}
+
 .menu ul li:hover{
     background-color: #f0f0f0;
     color: #000;
@@ -110,14 +116,44 @@
     padding: 0;
 }
 
+
 .menu ul ul {
-    display: none;;
+    display:block;
+    position: absolute; /* Para que o submenu flutue sobre o conteúdo */
+    background-color: white; /* Fundo do submenu */
+    min-width: 150px; /* Largura mínima do submenu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra para destaque */
+    z-index: 1; /* Garante que fique acima de outros conteúdos */
+    /* Outros estilos como padding, border-radius etc. */
+    left: 0; /* Alinha com o item pai */
+    top: 100%; /* Posiciona abaixo do item pai */
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+    margin: 0; /* Remove margem padrão */
+    border-radius: 5px;
 }
 
-.menu ul li:hover > ul {
-    display: block;
+.menu ul ul li {
+    float: none; /* Cada item do submenu fica em sua própria linha */
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 100%; /* Ocupa a largura total do submenu */
+    height: auto; /* Altura ajusta-se ao conteúdo */
+    line-height: normal; /* Reseta line-height para itens individuais */
 }
 
-.clHome, .clApres, .Art1, .Art2, .Art3, .Art4, .Art5 {
-    cursor: pointer;
+.menu ul ul li a {
+    padding: 10px 15px; /* Espaçamento interno para os links do submenu */
+    display: block; /* Faz o link ocupar toda a área clicável do li */
+    color: black;
+    text-decoration: none;
+}
+
+.menu ul ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Opcional: Estilo para o item pai quando seu submenu está ativo por clique */
+.menu ul li.active {
+    background-color: #f0f0f0; /* Um leve destaque para o item pai ativo */
+    color: #000;
 }

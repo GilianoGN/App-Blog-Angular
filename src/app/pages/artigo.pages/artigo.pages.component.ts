@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { AdvertisingBarComponent } from '../../component/advertising-bar/advertising-bar.component'; 
 import { MenuBarComponent } from '../../component/menu-bar/menu-bar.component';
 import { fakeData } from '../../data/dataFake';
@@ -9,7 +9,7 @@ import { fakeData } from '../../data/dataFake';
   templateUrl: './artigo.pages.component.html',
   styleUrl: './artigo.pages.component.css'
 })
-export class ArtigoPagesComponent implements OnInit {
+export class ArtigoPagesComponent implements OnInit, OnChanges {
   @Input() id: number = 5;
   photo!: string;
   title!: string;
@@ -18,6 +18,15 @@ export class ArtigoPagesComponent implements OnInit {
   date!: string;
 
   ngOnInit(): void {
+    this.loadArticleContent()
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['id'] && changes['id'].currentValue !== changes['id'].previousValue) {
+      this.loadArticleContent();
+    }
+  }
+  private loadArticleContent(): void {
     if (this.id !== undefined && this.id >= 0 && this.id < fakeData.length) {
       const dataItem = fakeData.find(item => item.id === this.id);
       if (dataItem) {

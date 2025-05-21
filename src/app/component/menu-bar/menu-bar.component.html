@@ -5,29 +5,29 @@
     <div class="menu-center">
         <nav class="menu">
             <ul>
-                <li><a class="clHome"(click)="Ativacao(1,0)">Home</a></li>
-                <li>Artigo
-                    <ul>
-                        <li><a class="Art1" (click)="Ativacao(2,0)">Artigo 1</a></li>
-                        <li><a class="Art2" (click)="Ativacao(2,1)">Artigo 2</a></li>
-                        <li><a class="Art3" (click)="Ativacao(2,2)">Artigo 3</a></li>
-                        <li><a class="Art4" (click)="Ativacao(2,3)">Artigo 4</a></li>
-                        <li><a class="Art5" (click)="Ativacao(2,4)">Artigo 5</a></li>
+                <li><a class="clHome" (click)="Ativacao(1,0); closeAllSubmenus()">Home</a></li>
+                <li (click)="toggleSubmenu('artigo')" [class.active]="activeSubmenu === 'artigo'"><a class="clArtigo">Artigo</a>
+                    <ul *ngIf="activeSubmenu === 'artigo' || isHoveringArtigo" (mouseenter)="isHoveringArtigo = true" (mouseleave)="isHoveringArtigo = false">
+                        <li><a class="Art1" (click)="Ativacao(2,0); closeAllSubmenus()">Artigo 1</a></li>
+                        <li><a class="Art2" (click)="Ativacao(2,1); closeAllSubmenus()">Artigo 2</a></li>
+                        <li><a class="Art3" (click)="Ativacao(2,2); closeAllSubmenus()">Artigo 3</a></li>
+                        <li><a class="Art4" (click)="Ativacao(2,3); closeAllSubmenus()">Artigo 4</a></li>
+                        <li><a class="Art5" (click)="Ativacao(2,4); closeAllSubmenus()">Artigo 5</a></li>
                     </ul>
                 </li>
-                <li>Solutions
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/giliano-gn-530071203">Linkedin</a></li>
-                        <li><a href="#">Solutions 2</a></li>
+                <li (click)="toggleSubmenu('solutions')" [class.active]="activeSubmenu === 'solutions'"><a class="clSolutions">Solutions</a>
+                    <ul *ngIf="activeSubmenu === 'solutions' || isHoveringSolutions" (mouseenter)="isHoveringSolutions = true" (mouseleave)="isHoveringSolutions = false">
+                        <li><a href="https://www.linkedin.com/in/giliano-gn-530071203" target="_blank" (click)="closeAllSubmenus()">Linkedin</a></li>
+                        <li><a href="#" (click)="closeAllSubmenus()">Solutions 2</a></li>
                     </ul>
                 </li>
-                <li>Learn
-                    <ul>
-                        <li><a href="https://github.com/GilianoGN/App-Blog-Angular">GitHub</a></li>
-                        <li><a href="#">Learn 2</a></li>
+                <li (click)="toggleSubmenu('learn')" [class.active]="activeSubmenu === 'learn'"><a class="clLearn">Learn</a>
+                    <ul *ngIf="activeSubmenu === 'learn' || isHoveringLearn" (mouseenter)="isHoveringLearn = true" (mouseleave)="isHoveringLearn = false">
+                        <li><a href="https://github.com/GilianoGN/App-Blog-Angular" target="_blank" (click)="closeAllSubmenus()">GitHub</a></li>
+                        <li><a href="#" (click)="closeAllSubmenus()">Learn 2</a></li>
                     </ul>
                 </li>
-                <li><a class="clApres" (click)="Ativacao(3,0)">Apresentação</a></li>
+                <li><a class="clApres" (click)="Ativacao(3,0); closeAllSubmenus()">Apresentação</a></li>
             </ul>
         </nav>
     </div>
@@ -37,4 +37,3 @@
     </div>
 </div>
 <hr>
-

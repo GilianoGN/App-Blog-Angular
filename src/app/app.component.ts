@@ -38,6 +38,8 @@ export class AppComponent implements OnInit {
     this.ActiveHome = false;
     this.ActiveArtigo = false;
     this.ActiveApresent = false;
+    if (indice == 2 && this.ActiveArtigo && this.Active === artigo) {
+    }
     if (indice == 1) {
       this.ActiveHome = true;
     } else if (indice == 2) {

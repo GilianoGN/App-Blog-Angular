@@ -1,9 +1,20 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-advertising-bar',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './advertising-bar.component.html',
   styleUrl: './advertising-bar.component.css'
 })
-export class AdvertisingBarComponent {}
+export class AdvertisingBarComponent {
+  showBar: boolean = true;
+
+  constructor() {
+    this.showBar = true;
+  }
+  
+  closeBar() {
+    this.showBar = false;
+  }
+}
